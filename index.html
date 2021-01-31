@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissor</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <img src="./assets/smiling_face.svg" alt="" class="emoji" />&emsp;
+        <img src="./assets/rock.svg" alt="" class="emoji" />Rock&emsp;
+        <img src="./assets/paper.svg" alt="" class="emoji" />Paper&emsp;
+        <img src="./assets/scissor.svg" alt="" class="emoji" />Scissor &emsp;
+        <img src="./assets/smiling_face.svg" alt="" class="emoji" />
+      </div>
+    <div class="sub-heading">
+      First 5 points to win. Read
+      <a href="#" onclick="viewmodal()" id="how_to_play">How to play.</a>
+    </div>
+
+      <!-- Modal - Open when clicked on How to Play -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div>
+          <p class="rules">
+            Although the game has a lot of complexity to it, the rules to play
+            it are pretty simple. The game is played where players deliver hand
+            signals that will represent the elements of the game; rock, paper
+            and scissors. The outcome of the game is determined by 3 simple
+            rules:
+          </p>
+          <ul>
+            <li><img src="./assets/rock.svg" alt="" class="list-emoji"> Rock wins against <img src="./assets/scissor.svg" alt="" class="list-emoji"> scissors.</li>
+            <li><img src="./assets/scissor.svg" alt="" class="list-emoji">Scissors win against <img src="./assets/paper.svg" alt="" class="list-emoji">paper.</li>
+            <li><img src="./assets/paper.svg" alt="" class="list-emoji">Paper wins against <img src="./assets/rock.svg" alt="" class="list-emoji">rock.</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </header>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+  </body>
 </html>
