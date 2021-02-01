@@ -92,7 +92,7 @@ function returnResult(userChoice) {
   }
   else if(userChoice == 2) {
     if(computerChoice == 1) {
-      move_info.innerHTML = "Paper beats Rock<br>You gains a point."
+      move_info.innerHTML = "Paper beats Rock<br>You gain a point."
       userScore++;
     }
     else {
@@ -107,7 +107,7 @@ function returnResult(userChoice) {
     }
     else {
       move_info.innerHTML = "Rock beats Scissor<br>Computer gains a point."
-      userScore++;
+      computerScore++;
     }
   }
   compScore.innerHTML = computerScore;
