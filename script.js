@@ -68,7 +68,7 @@ function checkResult(userScore, computerScore) {
     result_modal.style.display = "flex";
   } else if(computerScore == 5){
     result_modal.style.display = "flex";
-    modal_background.style.backgroundColor = "var(--warning-color)"
+    modal_background.style.backgroundColor = "var(--alert-color)"
     result.innerHTML = `<img src="./assets/sad.svg" alt="victory" class="emoji">Better Luck Next Time<img src="./assets/sad.svg" alt="victory" class="emoji">`
   }
 }
