@@ -17,11 +17,9 @@
   <body>
     <header>
       <div class="heading">
-        <img src="./assets/smiling_face.svg" alt="" class="emoji" />&emsp;
-        <img src="./assets/rock.svg" alt="" class="emoji" />Rock&emsp;
-        <img src="./assets/paper.svg" alt="" class="emoji" />Paper&emsp;
-        <img src="./assets/scissor.svg" alt="" class="emoji" />Scissor &emsp;
-        <img src="./assets/smiling_face.svg" alt="" class="emoji" />
+        <img src="./assets/rock.svg" alt="rock" class="emoji" />Rock&emsp;
+        <img src="./assets/paper.svg" alt="paper" class="emoji" />Paper&emsp;
+        <img src="./assets/scissor.svg" alt="scissors" class="emoji" />Scissor
       </div>
     <div class="sub-heading">
       First 5 points to win. Read
@@ -42,14 +40,58 @@
             rules:
           </p>
           <ul>
-            <li><img src="./assets/rock.svg" alt="" class="list-emoji"> Rock wins against <img src="./assets/scissor.svg" alt="" class="list-emoji"> scissors.</li>
-            <li><img src="./assets/scissor.svg" alt="" class="list-emoji">Scissors win against <img src="./assets/paper.svg" alt="" class="list-emoji">paper.</li>
-            <li><img src="./assets/paper.svg" alt="" class="list-emoji">Paper wins against <img src="./assets/rock.svg" alt="" class="list-emoji">rock.</li>
+            <li><img src="./assets/rock.svg" alt="Rock" class="emoji"> Rock wins against <img src="./assets/scissor.svg" alt="scissors" class="emoji"> scissors.</li>
+            <li><img src="./assets/scissor.svg" alt="scissors" class="emoji">Scissors win against <img src="./assets/paper.svg" alt="paper" class="emoji">paper.</li>
+            <li><img src="./assets/paper.svg" alt="paper" class="emoji">Paper wins against <img src="./assets/rock.svg" alt="rock" class="emoji">rock.</li>
           </ul>
         </div>
         </div>
       </div>
     </header>
+
+    <main id="main">
+      <div id="man" class="player-info">
+        <div class="player">
+          You&emsp;<img src="./assets/man.svg" class="emoji" alt="">
+        </div>
+        <div class="select-move">
+          <div id="rock" class="move"><img src="./assets/rock.svg" alt="rock" class="emoji">Rock</div>
+          <div id="paper" class="move"><img src="./assets/paper.svg" alt="paper" class="emoji">Paper</div>
+          <div id="scissor" class="move"><img src="./assets/scissor.svg" alt="scissors" class="emoji">Scissors</div>
+        </div>
+      </div>
+      <div id="move-retry">
+        <div id="move-info"></div>
+        <div id="retry"><img src="./assets/retry.svg" alt="" class="emoji"></div>
+        <div id="score"><span id="man-score">0</span>&nbsp;-&nbsp;<span id="computer-score">0</span></div>
+      </div>
+      <div id="computer" class="player-info">
+        <div class="player">
+          Computer&emsp;<img src="./assets/computer.svg" class="emoji" alt="computer">
+        </div>
+        <div class="select-move">
+          <div class="move"><img src="./assets/rock.svg" alt="rock" class="emoji">Rock</div>
+          <div class="move"><img src="./assets/paper.svg" alt="paper" class="emoji">Paper</div>
+          <div class="move"><img src="./assets/scissor.svg" alt="scissors" class="emoji">Scissors</div>
+        </div>
+      </div>
+
+      <!-- Result Modal -->
+      <!-- Modal - Open when clicked on How to Play -->
+      <div class="modal">
+        <!-- Modal content  -->
+        <div id="result" class="modal-content">
+          <span class="close">&times;</span>
+          <div>
+            You Won
+        </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">
+    <p>Created By <a target="_blank" href="https://github.com/jarihant701">Arihant Jain</a></p> <p>Emojis are provided by <a target="_blank" href="https://icons8.com/">Icons8</a></p>
+    </footer>
     <!-- Custom JS -->
     <script src="./script.js"></script>
   </body>
