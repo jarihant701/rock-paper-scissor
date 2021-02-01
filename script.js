@@ -63,13 +63,16 @@ function changeBGColor(computerChoice) {
 }
 
 
-function checkResult(userScore, computerScore) {
-  if(userScore == 5){
+function checkResult(User, Computer) {
+  console.log(User,Computer)
+  if(User == 5){
     result_modal.style.display = "flex";
-  } else if(computerScore == 5){
+    modal_background.style.backgroundColor = "var(--success-color)"
+    result.innerHTML = `<img src="./assets/victory.svg" alt="victory" class="emoji">Victory<img src="./assets/victory.svg" alt="victory" class="emoji">`
+  } else if(Computer == 5){
     result_modal.style.display = "flex";
     modal_background.style.backgroundColor = "var(--alert-color)"
-    result.innerHTML = `<img src="./assets/sad.svg" alt="victory" class="emoji">Better Luck Next Time<img src="./assets/sad.svg" alt="victory" class="emoji">`
+    result.innerHTML = `<img src="./assets/sad.svg" alt="sad" class="emoji">Better Luck Next Time<img src="./assets/sad.svg" alt="sad" class="emoji">`
   }
 }
 
