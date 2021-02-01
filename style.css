@@ -12,9 +12,8 @@ Alert - #F9D209 */
   --secondary-color: #77cab7;
   --background-color: #fff7f5;
   --text-color: #31130b;
-  --warning-color: #f9d209;
   --success-color: #64bc46;
-  --alert-color: #f9d209;
+  --alert-color: #E81E25;
 }
 
 * {
